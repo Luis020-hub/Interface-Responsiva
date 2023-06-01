@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive/pages/HomePage.dart';
+import 'package:responsive/pages/home/HomePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
