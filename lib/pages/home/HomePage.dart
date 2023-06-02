@@ -1,8 +1,8 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:responsive/pages/home/widgets/mobile_app_bar.dart';
-import 'package:responsive/pages/home/widgets/web_app.bar.dart';
+import 'package:responsive/pages/home/widgets/app_bar/mobile_app_bar.dart';
+import 'package:responsive/pages/home/widgets/app_bar/web_app.bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
