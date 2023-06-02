@@ -18,20 +18,46 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
+                    const SizedBox(width: 4),
                     IconButton(
-                        icon: const Icon(Icons.search), onPressed: () {}),
+                      icon: const Icon(Icons.search),
+                      color: Colors.grey,
+                      onPressed: () {},
+                    ),
                     const Expanded(
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Type something',
+                          isCollapsed: true,
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
             ),
+            const SizedBox(width: 32),
+            if (constraints.maxWidth >= 400) ...[
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'Learn',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ],
+            const SizedBox(width: 8),
+            if (constraints.maxWidth >= 500) ...[
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'Flutter',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ],
+            const SizedBox(width: 8),
           ],
         );
       }),
