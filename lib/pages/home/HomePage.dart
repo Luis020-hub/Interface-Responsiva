@@ -5,6 +5,7 @@ import 'package:responsive/pages/home/widgets/app_bar/mobile_app_bar.dart';
 import 'package:responsive/pages/home/widgets/app_bar/web_app.bar.dart';
 
 import '../../breakpoints.dart';
+import 'widgets/app_bar/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -29,7 +30,11 @@ class HomePage extends StatelessWidget {
             alignment: Alignment.topCenter,
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 1400),
-              child: ListView(),
+              child: ListView(
+                children: const [
+                  TopSection(),
+                ],
+              ),
             ),
           ),
         );
