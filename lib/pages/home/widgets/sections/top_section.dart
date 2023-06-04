@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/breakpoints.dart';
 import 'package:responsive/pages/home/widgets/sections/custom_search_field.dart';
 
 class TopSection extends StatelessWidget {
@@ -56,6 +57,57 @@ class TopSection extends StatelessWidget {
                     ),
                   ),
                 ),
+              ],
+            ),
+          );
+        }
+        if (maxWidth >= mobileBreakPoint) {
+          return SizedBox(
+            height: 320,
+            child: Stack(
+              children: [
+                const SizedBox(
+                  height: 250,
+                  width: double.infinity,
+                  child: Image(
+                    image: AssetImage('images/flutter.jpg'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                Positioned(
+                  left: 20,
+                  top: 20,
+                  child: Card(
+                    color: Colors.black,
+                    elevation: 8,
+                    child: Container(
+                      width: 450,
+                      padding: const EdgeInsets.all(25),
+                      child: Column(
+                        children: const [
+                          Text(
+                            'Learning FLutter',
+                            style: TextStyle(
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            'Learning FLutter in Udemy. Guaranteed quality',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                            ),
+                          ),
+                          SizedBox(height: 15),
+                          CustomSearchField(),
+                        ],
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           );
