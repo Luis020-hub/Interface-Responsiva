@@ -35,7 +35,7 @@ class TopSection extends StatelessWidget {
                       child: Column(
                         children: const [
                           Text(
-                            'Learning FLutter',
+                            'Learning Flutter',
                             style: TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
@@ -44,7 +44,7 @@ class TopSection extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Text(
-                            'Learning FLutter in Udemy. Guaranteed quality',
+                            'Learning Flutter in Udemy. Guaranteed quality',
                             style: TextStyle(
                               fontSize: 18,
                               color: Colors.white,
@@ -86,7 +86,7 @@ class TopSection extends StatelessWidget {
                       child: Column(
                         children: const [
                           Text(
-                            'Learning FLutter',
+                            'Learning Flutter',
                             style: TextStyle(
                               fontSize: 35,
                               fontWeight: FontWeight.bold,
@@ -95,7 +95,7 @@ class TopSection extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Text(
-                            'Learning FLutter in Udemy. Guaranteed quality',
+                            'Learning Flutter in Udemy. Guaranteed quality',
                             style: TextStyle(
                               fontSize: 15,
                               color: Colors.white,
@@ -112,7 +112,43 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
-        return Container();
+        return Column(
+          children: [
+            const AspectRatio(
+              aspectRatio: 3.4,
+              child: Image(
+                image: AssetImage('images/flutter.jpg'),
+                fit: BoxFit.cover,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text(
+                    'Learning Flutter',
+                    style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    'Learning Flutter in Udemy. Guaranteed quality',
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(height: 15),
+                  CustomSearchField(),
+                ],
+              ),
+            ),
+          ],
+        );
       },
     );
   }
