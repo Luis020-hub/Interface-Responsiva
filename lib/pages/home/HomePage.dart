@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive/pages/home/app_bar/web_app.bar.dart';
 import 'package:responsive/pages/home/widgets/app_bar/mobile_app_bar.dart';
+import 'package:responsive/pages/home/widgets/sections/advantages_section.dart';
 import 'package:responsive/pages/home/widgets/sections/top_section.dart';
 
 import '../../breakpoints.dart';
@@ -34,6 +35,7 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 children: const [
                   TopSection(),
+                  AdvantageSections(),
                 ],
               ),
             ),
