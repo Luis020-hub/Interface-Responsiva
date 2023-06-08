@@ -7,6 +7,7 @@ import 'package:responsive/pages/home/widgets/sections/advantages_section.dart';
 import 'package:responsive/pages/home/widgets/sections/top_section.dart';
 
 import '../../breakpoints.dart';
+import 'widgets/sections/courser_scetion.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -35,7 +36,8 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 children: const [
                   TopSection(),
-                  AdvantageSections(),
+                  AdvantagesSections(),
+                  CoursesSection(),
                 ],
               ),
             ),
