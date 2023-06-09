@@ -7,7 +7,7 @@ import 'package:responsive/pages/home/widgets/sections/advantages_section.dart';
 import 'package:responsive/pages/home/widgets/sections/top_section.dart';
 
 import '../../breakpoints.dart';
-import 'widgets/sections/courser_scetion.dart';
+import 'widgets/sections/course_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
