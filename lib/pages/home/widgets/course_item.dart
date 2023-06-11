@@ -19,6 +19,7 @@ class CourseItem extends StatelessWidget {
             builder: (_, constraints) {
               return const AutoSizeText(
                 'Flutter App Creation',
+                minFontSize: 3,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 15,

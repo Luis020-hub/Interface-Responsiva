@@ -1,8 +1,9 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive/pages/home/HomePage.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(DevicePreview(builder: (_) => const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -16,6 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      builder: DevicePreview.appBuilder,
+      locale: DevicePreview.locale(context),
       home: const HomePage(),
     );
   }
